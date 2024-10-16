@@ -8,8 +8,8 @@ import java.util.Collection;
 @Service
 public interface QuestionService {
 
-    Question addQuestion(String question, String answer);
     Question addQuestion(Question question);
+    Question addQuestion(String question, String answer);
     Question removeQuestion(String question, String answer);
     Question removeQuestion(Question question);
     Question findQuestion(String question);

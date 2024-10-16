@@ -2,6 +2,7 @@ package sky.pro.kurs_project_2.exeption;
 
 import org.springframework.validation.beanvalidation.SpringValidatorAdapter;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import sky.pro.kurs_project_2.dto.Question;
 
 @ResponseStatus(value = org.springframework.http.HttpStatus.BAD_REQUEST)
 public class QuestionIsAlreadyExeption extends RuntimeException{
@@ -11,5 +12,10 @@ public class QuestionIsAlreadyExeption extends RuntimeException{
         super("Question %s is already in use. Answer %s");
         this.question = question;
         this.answer = answer;
+    }
+    public QuestionIsAlreadyExeption(Question question) {
+        super("Question %s is already in use. Answer %s");
+        this.question = question.getQuestion();
+        this.answer = question.getAnswer();
     }
 }
