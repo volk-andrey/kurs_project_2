@@ -62,7 +62,12 @@ public class JavaQuestionService implements QuestionService{
 
     @Override
     public Question findQuestion(String question) {
-        return null;
+        for (Question findQuestion : questions) {
+            if (findQuestion.getQuestion().equals(question)) {
+                return findQuestion;
+            }
+        }
+        throw new QuestionNotFoundException(question,null);
     }
 
     @Override
