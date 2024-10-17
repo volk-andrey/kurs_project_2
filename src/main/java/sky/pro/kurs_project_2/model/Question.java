@@ -1,4 +1,4 @@
-package sky.pro.kurs_project_2.dto;
+package sky.pro.kurs_project_2.model;
 
 import java.util.Objects;
 
