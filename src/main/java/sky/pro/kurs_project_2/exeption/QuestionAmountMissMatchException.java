@@ -2,7 +2,6 @@ package sky.pro.kurs_project_2.exeption;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import sky.pro.kurs_project_2.dto.Question;
 
 @ResponseStatus(value = HttpStatus.BAD_REQUEST)
 public class QuestionAmountMissMatchException extends RuntimeException{

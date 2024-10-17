@@ -1,8 +1,7 @@
 package sky.pro.kurs_project_2.exeption;
 
-import org.springframework.validation.beanvalidation.SpringValidatorAdapter;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import sky.pro.kurs_project_2.dto.Question;
+import sky.pro.kurs_project_2.model.Question;
 
 @ResponseStatus(value = org.springframework.http.HttpStatus.BAD_REQUEST)
 public class QuestionIsAlreadyExeption extends RuntimeException{

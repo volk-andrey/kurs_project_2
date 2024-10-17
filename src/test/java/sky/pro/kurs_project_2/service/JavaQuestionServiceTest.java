@@ -3,7 +3,7 @@ package sky.pro.kurs_project_2.service;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import sky.pro.kurs_project_2.dto.Question;
+import sky.pro.kurs_project_2.model.Question;
 import sky.pro.kurs_project_2.exeption.QuestionIsAlreadyExeption;
 import sky.pro.kurs_project_2.exeption.QuestionNotFoundException;
 

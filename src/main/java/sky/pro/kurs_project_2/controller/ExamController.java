@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import sky.pro.kurs_project_2.dto.Question;
+import sky.pro.kurs_project_2.model.Question;
 import sky.pro.kurs_project_2.service.ExaminerService;
 
 import java.util.Collection;

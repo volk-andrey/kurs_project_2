@@ -1,6 +1,5 @@
 package sky.pro.kurs_project_2.service;
 
-import net.bytebuddy.asm.MemberSubstitution;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -11,13 +10,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import sky.pro.kurs_project_2.dto.Question;
+import sky.pro.kurs_project_2.model.Question;
 import sky.pro.kurs_project_2.exeption.QuestionAmountMissMatchException;
 
 import java.util.*;
 import java.util.stream.Stream;
 
-import static org.assertj.core.api.FactoryBasedNavigableListAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 

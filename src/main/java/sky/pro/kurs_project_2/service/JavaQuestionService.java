@@ -1,7 +1,7 @@
 package sky.pro.kurs_project_2.service;
 
 import org.springframework.stereotype.Service;
-import sky.pro.kurs_project_2.dto.Question;
+import sky.pro.kurs_project_2.model.Question;
 import sky.pro.kurs_project_2.exeption.QuestionIsAlreadyExeption;
 import sky.pro.kurs_project_2.exeption.QuestionNotFoundException;
 
